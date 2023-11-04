@@ -1,0 +1,155 @@
+@import url("./fonts.css");
+
+:root {
+  --globalFont: "Cascadia Code PL", Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--globalFont);
+  background-image: url("../img/background.jpg");
+  background-size: contain;
+}
+
+/* PRINCIPAL PAGE */
+
+.principalHeader {
+  padding: 1rem 2rem;
+  background-color: #4a0d67;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.principalContent {
+  margin: 2rem auto 30% auto;
+  width: 80%;
+}
+
+.view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.view a {
+  text-decoration: none;
+  padding: 2rem;
+  background-color: #9bf3f0;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.view a:hover {
+  box-shadow: 0 8px 8px 0 #00000033, 0 8px 8px 0 #00000033;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+}
+
+.view img {
+  width: 100%;
+}
+
+/* ABOUT PAGE */
+.aboutSection {
+  padding: 1rem;
+}
+
+.aboutSection h1 {
+  font-size: 2.5rem;
+}
+
+.aboutSection p {
+  font-size: 1.5rem;
+}
+
+.aboutSection div {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutSection div a {
+  font-size: 3rem;
+  color: #4a0d67;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+footer {
+  padding: 0.5rem;
+  background-color: #4a0d67;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* ANIMATIONS */
+.tracking-in-expand-forward-bottom {
+  animation: tracking-in-expand-forward-bottom 0.4s linear both;
+}
+@keyframes tracking-in-expand-forward-bottom {
+  0% {
+    letter-spacing: -0.2em;
+    transform: translateZ(-700px) translateY(100px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.scale-up-vertical-center {
+  animation: scale-up-vertical-center 0.4s;
+}
+@keyframes scale-up-vertical-center {
+  0% {
+    transform: scaleY(0.2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.scale-up-horizontal-center {
+  animation: scale-up-horizontal-center 0.4s;
+}
+@keyframes scale-up-horizontal-center {
+  0% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.scale-up-left {
+  animation: scale-up-left 0.4s;
+}
+@keyframes scale-up-left {
+  0% {
+    transform: scale(0.5);
+    transform-origin: left center;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: left center;
+  }
+}

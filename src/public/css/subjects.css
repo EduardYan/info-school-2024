@@ -1,0 +1,75 @@
+/*Styles for subjects pages*/
+
+#tablaDeContenido {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tablaDeContenido a {
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  color: #000;
+  background-color: #adfc92;
+  border-radius: 15px;
+  margin: 1rem 0;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+#tablaDeContenido a:hover {
+  box-shadow: 0 8px 8px 0 rgb(0 0 0 /20%), 0 8px 8px 0 rgb(0 0 0 /20%);
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+}
+
+.infoWrapper article {
+  background-color: #fffcf2;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.infoWrapper article h1 {
+  font-size: 2rem;
+}
+
+.infoWrapper article h2 {
+  font-size: 1.5rem;
+}
+
+.infoWrapper article img {
+  width: 70%;
+}
+
+.infoWrapper article #funcionesImagen {
+  width: 100%;
+}
+
+.infoWrapper article .segundaImagen {
+  margin-bottom: 4rem;
+}
+
+.infoWrapper article p {
+  font-size: 1.3em;
+}
+
+.infoWrapper .links {
+  list-style-image: url("../img/check-logo.png");
+}
+
+.infoWrapper .links li {
+  margin: 1rem 0;
+}
+
+.infoWrapper .links li a {
+  text-decoration: none;
+  color: #4a0d67;
+  display: block;
+}
+
+.infoWrapper .links li a:hover {
+  color: #7d12ae;
+}

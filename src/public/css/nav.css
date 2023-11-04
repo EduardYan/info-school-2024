@@ -1,0 +1,31 @@
+/* Styles for navigation */
+
+#logo {
+  max-width: 20%;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#abrirMenu,
+#cerrarMenu {
+  display: none;
+  font-size: 2rem;
+  background-color: #4a0d67;
+  border-style: none;
+  color: #fff;
+}
+
+#abrirMenu:hover,
+#cerrarMenu:hover {
+  cursor: pointer;
+}
